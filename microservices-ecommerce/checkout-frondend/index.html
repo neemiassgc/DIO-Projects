@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Checkout front-end</title>
+		<link rel="stylesheet" href="style/bulma/bulma.min.css"/>
+		<link rel="stylesheet" href="style/bulma/bulma-steps.min.css"/>
+		<link rel="stylesheet" href="style/bulma/bulma-divider.min.css"/>
+		<script src="style/all.min.js"></script>
+
+		<style>
+			.b-salmon {
+				border-top: 1px solid salmon;
+				border-bottom: 1px solid salmon;
+				border-left: 8px solid salmon;
+				border-right: 1px solid salmon;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<div class="columns my-2 is-centered">
+				<div class="column is-8">
+					<ul class="steps has-content-above has-content-centered is-large is-horizontal">
+						<li class="steps-segment is-active">
+							<span class="steps-marker">
+								<span class="icon">
+									<i class="fas fa-shopping-cart"></i>
+								</span>
+							</span>
+							<div class="steps-content">
+					        	<p class="is-size-6 heading">Shopping Cart</p>
+					        </div>
+						</li>
+						<li class="steps-segment">
+							<span class="steps-marker">
+								<span class="icon">
+									<i class="fas fa-user-check"></i>
+								</span>
+							</span>
+							<div class="steps-content">
+					        	<p class="is-size-6 heading">User information</p>
+					        </div>
+						</li>
+						<li class="steps-segment">
+							<span class="steps-marker">
+								<span class="icon">
+									<i class="fas fa-credit-card"></i>
+								</span>
+							</span>
+							<div class="steps-content">
+					        	<p class="is-size-6 heading">Payment</p>
+					        </div>
+						</li>
+						<li class="steps-segment">
+							<span class="steps-marker">
+								<span class="icon">
+									<i class="fas fa-check"></i>
+								</span>
+							</span>
+							<div class="steps-content">
+					        	<p class="is-size-6 heading">Status</p>
+					        </div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div>
+				<div class="divider">divider</div>
+			</div>
+
+			<div class="columns is-justify-content-center content-row">
+				<div class="column is-5">
+					<ul class="block">
+						<li class="is-flex is-justify-content-space-between is-align-items-center block p-3">
+							<div>
+								<div class="tags is-success">
+									<p class="is-size-4 has-text-black">Your cart</p>
+									<span class="tag is-rounded is-success">10</span>
+								</div>
+							</div>
+							<div>
+								<p class="title is-5 has-text-black">Total</p>
+								<p class="subtitle is-6">R$ 440,55</p>
+							</div>
+						</li>
+						<li class="is-flex is-justify-content-space-between is-align-items-center b-salmon box">
+							<div>
+								<p class="title is-6">Product 1</p>
+								<p class="subtitle is-6">Brief description</p>
+							</div>
+							<div>
+								<p class="heading is-size-6">R$ 123,43</p>
+							</div>
+						</li>
+						<li class="is-flex is-justify-content-space-between is-align-items-center b-salmon box">
+							<div>
+								<p class="title is-6">Product 1</p>
+								<p class="subtitle is-6">Brief description</p>
+							</div>
+							<div>
+								<p class="heading is-size-6">R$ 123,43</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="columns is-justify-content-center content-row is-hidden">
+				<div class="column is-7">
+					<form class="box">
+						<div class="field is-horizontal">
+							<div class="field-body">
+								<div class="field is-expanded">
+									<label class="label">Name</label>
+									<div class="control has-icons-left">
+										<input class="input" type="text" placeholder="Enter the your name"/>
+										<span class="icon is-small is-left">
+								    		<i class="fas fa-user"></i>
+								        </span>
+									</div>
+								</div>
+								<div class="field is-expanded">
+									<label class="label">Last name</label>
+									<div class="control">
+										<input class="input" type="text" placeholder="Enter the your name"/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="field is-expanded">
+							<label class="label">Username</label>
+							<div class="control has-icons-left">
+								<input class="input" type="text" placeholder="username"/>
+								<span class="icon is-small is-left">
+						    		<i class="fas fa-at"></i>
+						        </span>
+							</div>
+						</div>
+
+						<div class="field is-expanded">
+							<label class="label">Email</label>
+							<div class="control has-icons-left">
+								<input class="input" type="text" placeholder="example@gmail.com"/>
+								<span class="icon is-small is-left">
+						    		<i class="fas fa-envelope-open"></i>
+						        </span>
+							</div>
+						</div>
+
+						<div class="field is-horizontal">
+							<div class="field-body">
+								<div class="field is-expanded">
+									<label class="label">Address</label>
+									<div class="control has-icons-left">
+										<input class="input" type="address"/>
+										<span class="icon is-small is-left">
+								    		<i class="fas fa-map-marker-alt"></i>
+								        </span>
+									</div>
+								</div>
+								<div class="field is-expanded">
+									<label class="label">Address 2</label>
+									<div class="control has-icons-left">
+										<input class="input" type="address"/>
+										<span class="icon is-small is-left">
+								    		<i class="fas fa-map-marker"></i>
+								        </span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="field is-horizontal">
+							<div class="field-body">
+								<div class="field is-expanded">
+									<label class="label">Country</label>
+									<div class="control has-icons-left">
+										<div class="select">
+											<select>
+												<option>United States</option>
+												<option>Canada</option>
+												<option>Brazil</option>
+												<option>Germany</option>
+												<option>United Kingdom</option>
+											</select>
+										</div>
+										<span class="icon is-small is-left">
+								    		<i class="fas fa-globe"></i>
+								        </span>
+									</div>
+								</div>
+								<div class="field is-expanded">
+									<label class="label">State</label>
+									<div class="control">
+										<div class="select">
+											<select>
+												<option>Florida</option>
+												<option>Quebec</option>
+												<option>Sao Paulo</option>
+												<option>Berlim</option>
+												<option>London</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="field is-expanded">
+									<label class="label">Zipcode</label>
+									<div class="control">
+										<input class="input" type="address" placeholder="xxxx-xxx"/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr/>
+						<div class="field">
+							<label class="checkbox">
+							  <input type="checkbox"/>
+							  Shipping address is the same as my billing address
+							</label>
+						</div>
+						<div class="field">
+							<label class="checkbox">
+							  <input type="checkbox"/>
+							  Save this information for next time
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="columns is-justify-content-center content-row is-hidden">
+				<div class="column is-7">
+					<p class="title has-text-centered">Payment method</p>
+					<form class="box">
+						<div class="field">
+							<div class="control">
+								<label class="radio has-text-dark">
+									<input type="radio" name="answer">
+									Credit card
+								</label>
+							</div>
+						</div>
+						<div class="field">
+							<div class="control">
+								<label class="radio has-text-dark">
+									<input type="radio" name="answer">
+									Debit card
+								</label>
+							</div>
+						</div>
+						<div class="field">
+							<div class="control">
+								<label class="radio has-text-dark">
+									<input type="radio" name="answer">
+									Paypal
+								</label>
+							</div>
+						</div>
+						<div class="field is-horizontal">
+							<div class="field-body">
+								<div class="field is-expanded">
+									<label class="label">Number on card</label>
+									<div class="control has-icons-left">
+										<input class="input" type="text" placeholder="Card name here"/>
+										<span class="icon is-small is-left">
+								    		<i class="fas fa-credit-card"></i>
+								        </span>
+									</div>
+									<p class="help is-link">Full name as displayed on card</p>
+								</div>
+								<div class="field is-expanded">
+									<label class="label">Credit card number</label>
+									<div class="control has-icons-left">
+										<input class="input" type="text"/>
+										<span class="icon is-small is-left">
+								    		<i class="far fa-credit-card"></i>
+								        </span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="field-body">
+							<div class="field">
+								<label class="label">Expiration</label>
+								<div class="control">
+									<input class="input" type="text"/>
+								</div>
+							</div>
+							<div class="field">
+								<label class="label">CVV</label>
+								<div class="control">
+									<input class="input" type="text"/>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="columns is-justify-content-center content-row is-hidden">
+				<div class="column is-5">
+					<p class="title has-text-centered">Processing... <span id="progress-percent">0%</span></p>
+					<progress class="progress is-danger" max="100" value="0"></progress>
+				</div>
+			</div>
+
+			<div class="columns mt-6">
+				<div class="column is-12 has-text-centered">
+					<button class="button is-link is-large is-rounded" onclick="mainButtonAction(this)">Next Step</button>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+	<script>
+
+		function mainButtonAction(mainButton) {
+			nextStep();
+			nextContentRow()
+			initProcessing(mainButton);
+		}
+
+		function nextStep() {
+			const steps = document.querySelectorAll(".steps .steps-segment");
+			let actualStepIndex = 0;
+
+			for(let i = 0; i < steps.length; i++) {
+				if(steps[i].classList.contains("is-active")) {
+					actualStepIndex = i;
+					break;
+				}
+			}
+
+			if((actualStepIndex + 1) == steps.length) return;
+
+			steps[actualStepIndex].classList.remove("is-active");
+			steps[actualStepIndex + 1].classList.add("is-active");
+		}
+
+		function nextContentRow() {
+			const contents = document.querySelectorAll("body .content-row");
+			let actualContentIndex = 0;
+
+			for(let i = 0; i < contents.length; i++) {
+				if(!contents[i].classList.contains("is-hidden")) {
+					actualContentIndex = i;
+					break;
+				}
+			}
+
+			if((actualContentIndex + 1) == contents.length) return;
+
+			contents[actualContentIndex].classList.add("is-hidden");
+			contents[actualContentIndex + 1].classList.remove("is-hidden");
+		}
+
+		function processingLoad() {
+			let index = 1;
+			const progressBar = document.querySelector("progress");
+			const progressPercent = document.querySelector(".columns .column p #progress-percent");
+
+			const interval = setInterval(() => {
+				let tmpValue = parseInt(progressBar.value);
+				progressBar.value = (tmpValue + 1);
+
+				progressPercent.innerText = index+"%";
+
+				if(index == 101) {
+					progressPercent.innerText = "Completed";
+					progressPercent.classList.add("has-text-success");
+					progressBar.classList.remove("is-danger");
+					progressBar.classList.add("is-success");
+
+					clearInterval(interval);
+				}
+
+				index++;
+			}, 50)
+		}
+
+		function initProcessing(mainButton) {
+			const steps = document.querySelectorAll(".steps .steps-segment");
+			let actualStepIndex = 0;
+
+			for(let i = 0; i < steps.length; i++) {
+				if(steps[i].classList.contains("is-active")) {
+					actualStepIndex = i;
+					break;
+				}
+			}
+
+			if((actualStepIndex + 1) == steps.length) {
+				processingLoad();
+				mainButton.disabled = "on";
+			}
+		}
+	</script>
+</html>
